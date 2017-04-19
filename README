@@ -1,0 +1,19 @@
+README for Sequencer64-packages
+Chris Ahlstrom
+2017-04-19 to 2017-04-19
+
+Sequencer64 is a reboot of seq24.  It extends seq24 in features and bug fixes;
+the heart of seq24 remains intact.  See the sequencer64 project on GitHub:
+
+    http://github.com/ahlstromcj/sequencer64.git
+
+This project provides 32-bit and 64-bit Debian packages of recent builds of
+Sequencer64.
+
+Please let us know if you find issues with these Debian packages.  If you have
+a build for another version of Linux that you want to publish here, we will
+happily host it.
+
+Thanks!  Enjoy!
+
+# vim: sw=4 ts=4 wm=4 et ft=sh
