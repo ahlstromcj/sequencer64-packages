@@ -1,0 +1,46 @@
+Notes on Static Builds
+Chris Ahlstrom
+2017-11-19 to 2017-11-19
+
+This file documents issues surrounding getting a static build of
+Sequencer64 to work.
+
+Let us try the following commands:
+
+    $ ./bootstrap --full-clean
+    $ ./boostrap
+    $ ./configure --disable-shared --enable-static
+    $ make clean
+    $ make LDFLAGS='-all-static'
+ 
+We get errors:
+
+    /usr/bin/ld: cannot find -latkmm-1.6
+    /usr/bin/ld: cannot find -lgdkmm-2.4
+    /usr/bin/ld: cannot find -lgiomm-2.4
+    /usr/bin/ld: cannot find -lpangomm-1.4
+    /usr/bin/ld: cannot find -lglibmm-2.4
+    /usr/bin/ld: cannot find -latk-1.0
+    /usr/bin/ld: cannot find -lgdk_pixbuf-2.0
+    /usr/bin/ld: cannot find -ljack
+    /usr/bin/ld: cannot find -lasound
+    /usr/bin/ld: cannot find -lgtkmm-2.4
+    /usr/lib/gcc/x86_64-linux-gnu/7/../../../
+        x86_64-linux-gnu/libgio-2.0.a(libgio_2_0_la-glocalfileinfo.o):
+        In function 'lookup_gid_name':
+        warning: Using 'getgrgid_r' in statically linked applications
+        requires at runtime the shared libraries from the glibc version
+        used for linking
+
+With similar warnings for:
+
+	getpwnam getpwuid getpwnam_r getpwuid_r getaddrinfo getservbyname endservent
+
+	Makefile:755: recipe for target 'seq64' failed
+
+But on Debian Sid, there are no static libraries (*.a files) for the libraries
+erroring above (though libcairomm-1.0.a exists).
+
+So, the "LDFLAGS='-all-static'" setting cannot work.
+
+# vim: sw=4 ts=4 wm=8 et ft=sh

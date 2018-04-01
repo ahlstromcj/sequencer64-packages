@@ -1,0 +1,61 @@
+#!/bin/bash
+#
+#******************************************************************************
+# make-static (Sequencer64)
+#------------------------------------------------------------------------------
+##
+# \file       	make-static
+# \library    	Sequencer64
+# \author     	Chris Ahlstrom
+# \date       	2017-11-18
+# \update     	2017-11-18
+# \version    	$Revision$
+# \license    	$XPC_SUITE_GPL_LICENSE$
+#
+#     Rebuilds the static version of seq64 and creates the self-extracting tar
+#     file using the makeself script.
+#
+#------------------------------------------------------------------------------
+
+SEQ_DIRECTORY="../sequencer64"
+SEQ_PACKNAME="seq64"
+SEQ_VERSION=""
+SEQ_BUILD="1"
+SEQ_SYSTEM="linux"
+SEQ_SYSVERSION="$(uname -r)"
+SEQ_ARCH="x86_64"
+SEQ_TYPE="bin"
+SEQ_LINKAGE="static"
+SEQ_PACKING="xz"
+SEQ_EXT="run"
+SEQ_SCRIPTNAME=""
+
+SEQ_DOBUILD="no"
+
+#******************************************************************************
+# First, rebuild the seq64 executable as a static application.  This will be
+# the 64-bit version.
+#------------------------------------------------------------------------------
+
+pushd "$SEQ_DIRECTORY"
+
+if [ "SEQ_DOBUILD" == "yes" ] ; then
+   ./bootstrap --full-clean
+   ./configure --disable-shared --enable-static
+   make -j 4
+fi
+
+SEQ_VERSION="$(./Seq64rtmidi/seq64 -#)"
+SEQ_NAME_1="$SEQ_PACKNAME-$SEQ_VERSION-$SEQ_BUILD-$SEQ_SYSTEM-$SEQ_SYSVERSION"
+SEQ_NAME_2="$SEQ_TYPE-$SEQ_LINKAGE.$SEQ_PACKING.$SEQ_EXT"
+SEQ_SCRIPTNAME="$SEQ_NAME_1-$SEQ_NAME_2"
+
+echo "Building '$SEQ_SCRIPTNAME' ..."
+
+popd        # ../sequencer64
+
+#******************************************************************************
+# make-static (Sequencer64)
+#------------------------------------------------------------------------------
+# vim: ts=3 sw=3 wm=4 et ft=sh
+#------------------------------------------------------------------------------

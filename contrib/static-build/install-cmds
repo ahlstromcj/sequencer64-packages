@@ -1,0 +1,72 @@
+
+Making install in resources/pixmaps
+make[2]: Nothing to be done for 'install-exec-am' or 'install-data-am'.
+Making install in libseq64
+    Making install in include
+    make[3]: Nothing to be done for 'install-exec-am'.
+    /bin/mkdir -p '/usr/local/include/sequencer64-0.93/sequencer64'
+
+# This command is long and broken into two, use xargs...
+#
+    /usr/bin/install -c -m 644 *.h *.hpp '/usr/local/include/sequencer64-0.93/sequencer64'
+
+    Making install in src
+    /bin/mkdir -p '/usr/local/lib/sequencer64-0.93'
+    /bin/bash ../../libtool --mode=install /usr/bin/install -c libseq64.la '/usr/local/lib/sequencer64-0.93'
+    libtool: install: /usr/bin/install -c .libs/libseq64.a /usr/local/lib/sequencer64-0.93/libseq64.a
+    libtool: install: chmod 644 /usr/local/lib/sequencer64-0.93/libseq64.a
+    libtool: install: ranlib /usr/local/lib/sequencer64-0.93/libseq64.a
+    libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/bin:/sbin" ldconfig -n /usr/local/lib/sequencer64-0.93
+
+    Libraries have been installed in: /usr/local/lib/sequencer64-0.93
+
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+Making install in seq_rtmidi
+    Making install in include
+    /bin/mkdir -p '/usr/local/include/sequencer64-0.93/sequencer64'
+    /usr/bin/install -c -m 644 *.h *.hpp '/usr/local/include/sequencer64-0.93/sequencer64'
+    Making install in src
+    /bin/mkdir -p '/usr/local/lib/sequencer64-0.93'
+    /bin/bash ../../libtool --mode=install /usr/bin/install -c libseq_rtmidi.la '/usr/local/lib/sequencer64-0.93'
+    libtool: install: /usr/bin/install -c .libs/libseq_rtmidi.lai /usr/local/lib/sequencer64-0.93/libseq_rtmidi.la
+    libtool: install: /usr/bin/install -c .libs/libseq_rtmidi.a /usr/local/lib/sequencer64-0.93/libseq_rtmidi.a
+    libtool: install: chmod 644 /usr/local/lib/sequencer64-0.93/libseq_rtmidi.a
+    libtool: install: ranlib /usr/local/lib/sequencer64-0.93/libseq_rtmidi.a
+    libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/bin:/sbin" ldconfig -n /usr/local/lib/sequencer64-0.93
+
+Libraries have been installed in: /usr/local/lib/sequencer64-0.93
+
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+Making install in seq_gtkmm2
+    Making install in include
+    /bin/mkdir -p '/usr/local/include/sequencer64-0.93/sequencer64'
+    /usr/bin/install -c -m 644 *.h *.hpp '/usr/local/include/sequencer64-0.93/sequencer64'
+    Making install in src
+    /bin/mkdir -p '/usr/local/lib/sequencer64-0.93'
+    /bin/bash ../../libtool   --mode=install /usr/bin/install -c   libseq_gtkmm2.la '/usr/local/lib/sequencer64-0.93'
+    libtool: install: /usr/bin/install -c .libs/libseq_gtkmm2.lai /usr/local/lib/sequencer64-0.93/libseq_gtkmm2.la
+    libtool: install: /usr/bin/install -c .libs/libseq_gtkmm2.a /usr/local/lib/sequencer64-0.93/libseq_gtkmm2.a
+    libtool: install: chmod 644 /usr/local/lib/sequencer64-0.93/libseq_gtkmm2.a
+    libtool: install: ranlib /usr/local/lib/sequencer64-0.93/libseq_gtkmm2.a
+    libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/bin:/sbin" ldconfig -n /usr/local/lib/sequencer64-0.93
+
+Libraries have been installed in: /usr/local/lib/sequencer64-0.93
+
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+Making install in Seq64rtmidi
+    /bin/mkdir -p '/usr/local/bin'
+    /bin/bash ../libtool   --mode=install /usr/bin/install -c seq64 '/usr/local/bin'
+    libtool: install: /usr/bin/install -c seq64 /usr/local/bin/seq64
+
+Making install in Midiclocker64
+    /bin/mkdir -p '/usr/local/bin'
+    /bin/bash ../libtool   --mode=install /usr/bin/install -c midiclocker64 '/usr/local/bin'
+    libtool: install: /usr/bin/install -c midiclocker64 /usr/local/bin/midiclocker64
+
+Making install in man
+    /bin/mkdir -p '/usr/local/share/man/man1'
+    /usr/bin/install -c -m 644 sequencer64.1 seq64.1 '/usr/local/share/man/man1'
+

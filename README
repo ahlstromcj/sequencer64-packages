@@ -1,6 +1,6 @@
 README for Sequencer64-packages
 Chris Ahlstrom
-2017-04-19 to 2017-08-27
+2017-04-19 to 2018-04-01
 
 Sequencer64 is a reboot of seq24.  It extends seq24 in features and bug fixes;
 the heart of seq24 remains intact.  See the sequencer64 project on GitHub:
@@ -8,7 +8,9 @@ the heart of seq24 remains intact.  See the sequencer64 project on GitHub:
     http://github.com/ahlstromcj/sequencer64.git
 
 This project provides 32-bit and 64-bit Debian packages of recent builds of
-Sequencer64.
+Sequencer64, and we will be trying self-extracting archives for static builds
+of the "rtmidi" version of Sequencer64, seq64.  Also, the usual source-code
+tarballs are now provided.
 
 Some users are finding issues installing the deb on KX Studio and other
 music-specific distros.  The latest deb in the 0.93.3 directory is:
@@ -22,8 +24,23 @@ Please let us know if you find issues with these packages.  If you have
 a build for another version of Linux that you want to publish here, we will
 happily host it.
 
-Thanks!  Enjoy!
+    Current packages:
 
-    Chris
+        0.94:
+            sequencer64-master-rtmidi-0.94.7.tar.xz
+
+        0.90.3:
+
+            sequencer64_0.90.3-0_amd64.deb
+            sequencer64_0.90.3-0_i386.deb
+
+        0.93.3:
+
+            sequencer64_0.93.3-0_amd64.deb
+            sequencer64-kxstudio-ubuntu-14.04.5-LTS_0.93.3-0_amd64.deb
+
+        seq24:
+
+            seq24_0.9.3-1_amd64.deb
 
 # vim: sw=4 ts=4 wm=4 et ft=sh
