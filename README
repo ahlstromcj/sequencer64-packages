@@ -1,13 +1,13 @@
 README for Sequencer64-packages
 Chris Ahlstrom
-2017-04-19 to 2018-05-13
+2017-04-19 to 2018-06-03
 
 Sequencer64 is a reboot of seq24.  It extends seq24 in features and bug fixes;
 the heart of seq24 remains intact.  See the sequencer64 project on GitHub:
 
     http://github.com/ahlstromcj/sequencer64.git
 
-This project provides 32-bit and 64-bit Debian packages of recent builds of
+This project provides 32-bit and 64-bit Debian packages of older builds of
 Sequencer64, and we will be trying self-extracting archives for static builds
 of the "rtmidi" version of Sequencer64, seq64.  Also, the usual source-code
 tarballs (that support the "./configure" command) are now provided, though
@@ -39,11 +39,16 @@ Please let us know if you find issues with these packages.  If you have
 a build for another version of Linux that you want to publish here, we will
 can host it.
 
-    Current packages:
+    Current packages directories:
+
+        0.95:
+            sequencer64_setup-0.95.0-0.exe ("Sequencer64 for Windows" installer)
+            qpseq64-portable-0.95.0-0.zip ("unzip and use" package for Windows)
+            sequencer64-master-0.95.0-0.tar.xz ("configure" source package)
 
         0.94:
             sequencer64-master-rtmidi-0.94.7.tar.xz
-            qpseq64-0.94.8-release.zip ("Sequencer64 for Windows")
+            qpseq64-0.94.8-release.zip ("Sequencer64 for Windows" prototype)
 
         0.90.3:
             sequencer64_0.90.3-0_amd64.deb
