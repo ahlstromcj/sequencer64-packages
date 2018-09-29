@@ -1,6 +1,8 @@
 README for Sequencer64-packages
 Chris Ahlstrom
-2017-04-19 to 2018-06-03
+2017-04-19 to 2018-09-29
+
+Latest version is "0.96.0" in the "latest" subdirectory.
 
 Sequencer64 is a reboot of seq24.  It extends seq24 in features and bug fixes;
 the heart of seq24 remains intact.  See the sequencer64 project on GitHub:
@@ -14,10 +16,10 @@ tarballs (that support the "./configure" command) are now provided, though
 usually out-of-date.
 
 And, at last, we provide "Sequencer64 For Windows".  The current version,
-0.94.8, is a working prototype, using a cut-down Qt 5 user-interface.
-It is currently distributed only as a portable Zip file that you can
-extract to a directory, and then create a short-cut to the qpseq64.exe
-executable file.
+0.96.0, is nearly full-featured, and uses a Qt 5 user-interface.  It is
+distributed as a portable Zip file that you can extract to a directory, and
+then create a short-cut to the qpseq64.exe executable file.  An NSIS installer
+executable is also available.
 
 For Windows, you also need to navigate to Control Panel / Sound / Playback /
 Speakers / Advanced, and then check-mark this item:
@@ -40,6 +42,14 @@ a build for another version of Linux that you want to publish here, we will
 can host it.
 
     Current packages directories:
+
+        latest:
+            sequencer64_setup-0.96.0-0.exe ("Sequencer64 for Windows" installer)
+            qpseq64-portable-0.96.0-0.zip ("unzip and use" package for Windows)
+            sequencer64-master-0.96.0-0.tar.xz ("configure" source package)
+
+        0.96:
+            Empty until version 0.97 is released (in the future!)
 
         0.95:
             sequencer64_setup-0.95.0-0.exe ("Sequencer64 for Windows" installer)

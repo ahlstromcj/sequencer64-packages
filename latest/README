@@ -1,0 +1,12 @@
+README for Sequencer64-packages "latest"
+Chris Ahlstrom
+2018-09-29 to 2018-09-29
+
+This directory contains the official release packages for the latest
+version of Sequencer64.
+
+    sequencer64_setup-0.96.0-0.exe ("Sequencer64 for Windows" installer)
+    qpseq64-portable-0.96.0-0.zip ("unzip and use" package for Windows)
+    sequencer64-master-0.96.0-0.tar.xz ("configure" source package)
+
+# vim: sw=4 ts=4 wm=4 et ft=sh
