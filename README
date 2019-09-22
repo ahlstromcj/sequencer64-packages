@@ -1,8 +1,8 @@
 README for Sequencer64-packages
 Chris Ahlstrom
-2017-04-19 to 2018-09-29
+2017-04-19 to 2019-09-22
 
-Latest version is "0.96.0" in the "latest" subdirectory.
+Latest version is "0.96.5" in the "latest" subdirectory.
 
 Sequencer64 is a reboot of seq24.  It extends seq24 in features and bug fixes;
 the heart of seq24 remains intact.  See the sequencer64 project on GitHub:
