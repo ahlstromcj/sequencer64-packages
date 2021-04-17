@@ -1,32 +1,26 @@
-README for Sequencer64-packages (and now Seq66)
+README for Sequencer64 (and Seq66) Packages
 Chris Ahlstrom
-2017-04-19 to 2020-08-14
+2017-04-19 to 2021-04-17
 
-Latest version is "0.96.5" in the "latest" subdirectory.
+Latest version of Sequencer64 is "0.96.5" in the "latest" subdirectory.  We
+will be removing earlier versions soon.  This is the last version of
+Sequencer64 for Windows, because we are standardizing on our related "Seq66"
+project, which has more features, is leaner, and is better debugged.  It is
+stored here, in the Seq66/0.93 directory.  The latest version of the installer
+and 7-zip portable package is 0.93.0.  The most-up-to-date documentation can
+be found in the "Seq66" GitHub project.
 
-----------------------------------
-HOWEVER, for Windows we are standardizing on our related "Seq66" project,
-which has more features now, and is better debugged.  It is stored here, in
-the Seq66/0.90 directory.  The latest version of qpseq66 is 0.90.5. Get that
-one instead!!!
-----------------------------------
-
-Sequencer64 is a reboot of seq24.  It extends seq24 in features and bug fixes;
-the heart of seq24 remains intact.  See the sequencer64 project on GitHub:
+Sequencer64 and Seq66 are major reboots of seq24.  They extend seq24 in
+features and bug fixes; the heart of seq24 remains intact.  See the
+sequencer64 and seq66 projects on GitHub:
 
     http://github.com/ahlstromcj/sequencer64.git
+    http://github.com/ahlstromcj/seq66.git
 
-This project provides 32-bit and 64-bit Debian packages of older builds of
-Sequencer64, and we will be trying self-extracting archives for static builds
-of the "rtmidi" version of Sequencer64, seq64.  Also, the usual source-code
-tarballs (that support the "./configure" command) are now provided, though
-usually out-of-date.
-
-And, at last, we provide "Sequencer64 For Windows".  The current version,
-0.96.0, is nearly full-featured, and uses a Qt 5 user-interface.  It is
-distributed as a portable Zip file that you can extract to a directory, and
-then create a short-cut to the qpseq64.exe executable file.  An NSIS installer
-executable is also available.
+The current version of "Sequencer64 For Windows" is full-featured, and uses a
+Qt 5 user-interface.  It is distributed as a portable Zip file that you can
+extract to a directory, and then create a short-cut to the qpseq64.exe
+executable file.  An NSIS installer executable is also available.
 
 For Windows, you also need to navigate to Control Panel / Sound / Playback /
 Speakers / Advanced, and then check-mark this item:
@@ -50,13 +44,20 @@ can host it.
 
     Current packages directories:
 
+        seq66/0.93.0:
+
+        seq66_setup_0.93.0.exe (Windows installer)
+        qpseq66-release-package-0.93.0.7z (Windows portable package)
+
+        seq66/0.92.0:
+
+        seq66_setup_0.92.0.exe (Windows installer)
+        qpseq66-release-package-0.92.0.7z (Windows portable package)
+
         latest:
             sequencer64_setup-0.96.0-0.exe ("Sequencer64 for Windows" installer)
             qpseq64-portable-0.96.0-0.zip ("unzip and use" package for Windows)
             sequencer64-master-0.96.0-0.tar.xz ("configure" source package)
-
-        0.96:
-            Empty until version 0.97 is released (in the future!)
 
         0.95:
             sequencer64_setup-0.95.0-0.exe ("Sequencer64 for Windows" installer)
