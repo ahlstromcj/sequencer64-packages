@@ -1,13 +1,15 @@
 README for Sequencer64 (and Seq66) Packages
 Chris Ahlstrom
-2017-04-19 to 2021-04-17
+2017-04-19 to 2021-12-11
+
+See the following notes on replacing Seq64 with Seq66.
 
 Latest version of Sequencer64 is "0.96.5" in the "latest" subdirectory.  We
 will be removing earlier versions soon.  This is the last version of
 Sequencer64 for Windows, because we are standardizing on our related "Seq66"
 project, which has more features, is leaner, and is better debugged.  It is
-stored here, in the Seq66/0.93 directory.  The latest version of the installer
-and 7-zip portable package is 0.93.0.  The most-up-to-date documentation can
+stored here, in the Seq66/0.98 directory.  The latest version of the installer
+and 7-zip portable package is 0.98.0.  The most-up-to-date documentation can
 be found in the "Seq66" GitHub project.
 
 Sequencer64 and Seq66 are major reboots of seq24.  They extend seq24 in
